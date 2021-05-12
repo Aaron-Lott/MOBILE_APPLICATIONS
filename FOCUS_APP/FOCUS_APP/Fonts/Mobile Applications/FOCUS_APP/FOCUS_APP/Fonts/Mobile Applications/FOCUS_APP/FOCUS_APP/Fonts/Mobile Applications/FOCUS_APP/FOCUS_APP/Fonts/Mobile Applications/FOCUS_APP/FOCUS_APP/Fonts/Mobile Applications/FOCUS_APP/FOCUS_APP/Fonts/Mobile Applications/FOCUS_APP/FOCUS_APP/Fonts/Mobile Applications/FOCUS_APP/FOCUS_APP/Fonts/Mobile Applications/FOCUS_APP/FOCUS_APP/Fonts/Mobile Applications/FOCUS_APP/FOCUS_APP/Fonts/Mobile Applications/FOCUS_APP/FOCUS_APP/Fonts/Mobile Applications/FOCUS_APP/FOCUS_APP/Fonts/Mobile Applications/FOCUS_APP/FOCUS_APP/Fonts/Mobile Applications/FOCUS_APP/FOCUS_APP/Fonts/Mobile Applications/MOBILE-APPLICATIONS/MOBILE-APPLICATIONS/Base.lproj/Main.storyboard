@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black 18.37.27.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-Light 18.37.27.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Thin 18.37.27.ttf">
+            <string>Roboto-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="MOBILE_APPLICATIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waves" translatesAutoresizingMaskIntoConstraints="NO" id="ZYJ-IE-4TH">
+                                <rect key="frame" x="0.0" y="594" width="414" height="147"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoinsUI" translatesAutoresizingMaskIntoConstraints="NO" id="WIz-AB-qau">
+                                <rect key="frame" x="328" y="10" width="76" height="35"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mZq-FV-pP7">
+                                <rect key="frame" x="146.33333333333334" y="70" width="121.33333333333334" height="27.333333333333329"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO0-6j-gJJ" userLabel="CoinsCount">
+                                <rect key="frame" x="386.33333333333331" y="18" width="9.6666666666666856" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jsz-OV-y2R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="QzS-rk-Jbs"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="1jS-GN-BPV"/>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sAP-Uf-ZkE" userLabel="Main Stack View">
+                                <rect key="frame" x="89.000000000000014" y="135" width="236.33333333333337" height="426"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FishBowl" translatesAutoresizingMaskIntoConstraints="NO" id="z2k-qr-8g8">
+                                        <rect key="frame" x="0.0" y="0.0" width="236.33333333333334" height="243.33333333333334"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1u-5k-lNt">
+                                        <rect key="frame" x="32.666666666666671" y="263.33333333333331" width="170.66666666666663" height="84.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-TE-vVY" userLabel="GrowButton">
+                                        <rect key="frame" x="20" y="368" width="196" height="58"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="28"/>
+                                        <state key="normal" title="Grow!" backgroundImage="ButtonBlue"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.58823531870000001" green="0.7607843876" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZYJ-IE-4TH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3c6-aL-jGs"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYJ-IE-4TH" secondAttribute="trailing" id="7Tc-Yq-JpZ"/>
+                            <constraint firstItem="mZq-FV-pP7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="8jq-iN-O5O"/>
+                            <constraint firstItem="sAP-Uf-ZkE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="F8W-Ve-iw2"/>
+                            <constraint firstItem="uO0-6j-gJJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="SaX-MC-Bde"/>
+                            <constraint firstItem="sAP-Uf-ZkE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ToA-tu-ZXt"/>
+                            <constraint firstItem="WIz-AB-qau" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="bVr-dE-tTH"/>
+                            <constraint firstItem="WIz-AB-qau" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="e5q-YU-q6A"/>
+                            <constraint firstItem="uO0-6j-gJJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-18" id="h88-DO-0kn"/>
+                            <constraint firstAttribute="bottom" secondItem="ZYJ-IE-4TH" secondAttribute="bottom" constant="-5" id="sV1-Ya-R76"/>
+                            <constraint firstItem="mZq-FV-pP7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y51-RR-nnZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="growButton" destination="Avx-TE-vVY" id="694-G2-0hG"/>
+                        <outlet property="pageControl" destination="mZq-FV-pP7" id="EIR-1J-2Mr"/>
+                        <outlet property="scrollView" destination="Jsz-OV-y2R" id="Fi8-1c-c7R"/>
+                        <outlet property="timerLabel" destination="U1u-5k-lNt" id="Aqn-N0-s6Q"/>
+                        <segue destination="cNk-UJ-Rbb" kind="presentation" identifier="goDown" id="RZB-az-2cF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.478260869565219" y="87.228260869565219"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="x6a-cj-QPH">
+            <objects>
+                <viewController id="d5J-re-B8j" userLabel="Shop View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBu-hQ-TLY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop" translatesAutoresizingMaskIntoConstraints="NO" id="Jf6-1Y-pek">
+                                <rect key="frame" x="22.666666666666657" y="68" width="369" height="520"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Species" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di3-zn-1oN">
+                                <rect key="frame" x="113.66666666666669" y="91.666666666666671" width="187" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="28"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="69W-Hz-eFZ"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="di3-zn-1oN" firstAttribute="centerY" secondItem="PBu-hQ-TLY" secondAttribute="centerY" constant="-260" id="DmD-vt-t4H"/>
+                            <constraint firstItem="di3-zn-1oN" firstAttribute="centerX" secondItem="PBu-hQ-TLY" secondAttribute="centerX" id="SGd-Nx-5xq"/>
+                            <constraint firstItem="Jf6-1Y-pek" firstAttribute="centerY" secondItem="PBu-hQ-TLY" secondAttribute="centerY" constant="-40" id="lIW-j0-ZHb"/>
+                            <constraint firstItem="Jf6-1Y-pek" firstAttribute="centerX" secondItem="PBu-hQ-TLY" secondAttribute="centerX" id="x4g-yr-vzy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="41R-gH-R29"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rl0-OX-58T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="820"/>
+        </scene>
+        <!--Reef View Controller-->
+        <scene sceneID="P2d-YH-tdA">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cNk-UJ-Rbb" userLabel="Reef View Controller" customClass="ReefViewController" customModule="MOBILE_APPLICATIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hvp-5j-EVa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="C6z-Jc-wn8"/>
+                        <color key="backgroundColor" red="0.0" green="0.42352938649999999" blue="0.57254904510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vCW-sM-EtY"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="goUp" id="tvh-fA-dCm"/>
+                        <segue destination="DC7-Br-GRt" kind="unwind" identifier="unwindSegueToMainVC" unwindAction="unwindToMainVCWithSegue:" id="dSJ-LC-XDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUP-HS-NLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DC7-Br-GRt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ButtonBlue" width="196" height="58"/>
+        <image name="CoinsUI" width="76" height="35"/>
+        <image name="FishBowl" width="236.33332824707031" height="243.33332824707031"/>
+        <image name="Shop" width="369" height="520"/>
+        <image name="Waves" width="414" height="147"/>
+    </resources>
+</document>
